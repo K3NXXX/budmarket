@@ -8,16 +8,18 @@ import styles from './Header.module.scss'
 import logo from '/public/header/logo.svg'
 import { IoCartOutline } from "react-icons/io5";
 import { RiShoppingCartLine } from "react-icons/ri";
+import Link from 'next/link'
+import { PAGES } from '@/constants/pages.constants'
 export function Header() {
 	return (
 		<footer className={styles.root}>
 			<div className={styles.wrapper}>
 				<div className={styles.top}>
 					<div className={styles.left}>
-						<div className={styles.logo}>
+						<Link href={PAGES.HOME} className={styles.logo}>
 							<Image width={45} src={logo} alt='logo' />
 							<p>БУДМАРКЕТ</p>
-						</div>
+						</Link>
 					</div>
 					<div className={styles.right}>
 						<ul className={styles.list}>

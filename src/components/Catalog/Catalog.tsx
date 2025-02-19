@@ -1,5 +1,5 @@
 import { goodsList } from '@/lists/goodsList'
-import { GoodCard } from '../GoodCard/GoodCard'
+import { GoodCard } from '../ProductCard/ProductCard'
 import styles from './Catalog.module.scss'
 
 export function Catalog() {

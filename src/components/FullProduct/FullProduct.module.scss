@@ -1,0 +1,155 @@
+.root {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0px 15px 100px 15px;
+	.wrapper {
+		display: flex;
+		gap: 0 30px;
+		.left {
+			img {
+				border: 1px solid rgb(199, 199, 199);
+			}
+		}
+		.right {
+			.name {
+				font-size: 30px;
+				font-weight: 700;
+				margin-bottom: 20px;
+				color: #3f3f3f;
+			}
+			.producer,
+			.availability {
+				font-size: 14px;
+				margin-bottom: 5px;
+				span {
+					color: #3daa42;
+				}
+			}
+			.price {
+				font-size: 18px;
+				font-weight: 500;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				span {
+					font-size: 24px;
+					font-weight: 700;
+				}
+			}
+			.addToCart {
+				display: flex;
+				align-items: center;
+				gap: 0 20px;
+				margin-bottom: 20px;
+				.counter {
+					display: flex;
+					align-items: center;
+					border: 1px solid rgb(199, 199, 199);
+					user-select: none;
+					.symbol {
+						cursor: pointer;
+					}
+					div {
+						padding: 13px;
+						font-weight: 700;
+						color: #6f6f6f;
+					}
+				}
+				button {
+					color: white;
+					background-color: #e31c20;
+					text-transform: uppercase;
+					padding: 13px 20px;
+					transition: 0.3s ease;
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+			}
+			.phone {
+				color: #e31c20;
+				margin-bottom: 10px;
+				span {
+					font-weight: 700;
+					color: #333333;
+				}
+			}
+			.buyByClick {
+				border: 1px solid #e31c20;
+				padding: 10px 20px;
+				background-color: #f8f8f8;
+				display: flex;
+				align-items: center;
+				gap: 0 30px;
+				width: 90%;
+				margin-bottom: 30px;
+				.left {
+					width: 30%;
+					p {
+						color: #3d3d3d;
+					}
+				}
+				.right {
+					display: flex;
+					width: 100%;
+					input {
+						width: 100%;
+						padding: 10px 12px;
+						border: 1px solid #ccc;
+						border-radius: 4px 0px 0px 4px;
+					}
+					button {
+						color: white;
+						background-color: #e31c20;
+						padding: 11px 14px;
+						font-weight: 500;
+					}
+				}
+			}
+			.features {
+				display: grid;
+				grid-template-columns: repeat(3, 230px);
+				gap: 0 20px;
+				background: #f8f8f8;
+				padding: 20px 20px;
+				margin-bottom: 70px;
+				.wrapper {
+					display: flex;
+					flex-direction: column;
+					gap: 10px 0;
+					.top {
+						display: flex;
+						align-items: center;
+						gap: 0 10px;
+					}
+					p {
+						font-size: 15px;
+						text-transform: uppercase;
+						color: #3d3d3d;
+						font-weight: 700;
+					}
+					ul {
+						display: flex;
+						flex-direction: column;
+						gap: 5px 0;
+						padding-left: 20px;
+						li {
+							line-height: 16px;
+						}
+					}
+				}
+			}
+			.description {
+				h3 {
+					font-size: 27px;
+					color: #3d3d3d;
+					margin-bottom: 20px;
+				}
+				p {
+					color: #3d3d3d;
+					font-size: 16px;
+					line-height: 22px;
+				}
+			}
+		}
+	}
+}
