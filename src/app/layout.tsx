@@ -1,6 +1,7 @@
 import { Header } from '@/components/Header/Header'
 import { Roboto } from 'next/font/google'
 import './global.scss'
+import { HeaderMobile } from '@/components/Header/HeaderMobile/HeaderMobile'
 
 const roboto = Roboto({
 	variable: '--font-roboto-sans',
@@ -17,6 +18,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={roboto.variable}>
 				<Header />
+				<HeaderMobile/>
 				{children}
 			</body>
 		</html>

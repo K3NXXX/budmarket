@@ -6,7 +6,11 @@
 	cursor: pointer;
 	&:hover {
 		transform: scale(1.1);
+		@media (max-width:1000px) {
+			transform: none;
+		}
 	}
+	
 	.card {
 		.name {
 			margin-top: 5px;

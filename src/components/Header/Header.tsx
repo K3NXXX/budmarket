@@ -1,18 +1,16 @@
+import { PAGES } from '@/constants/pages.constants'
 import Image from 'next/image'
+import Link from 'next/link'
 import { FaRegHeart } from 'react-icons/fa'
-import { FaCartShopping } from 'react-icons/fa6'
 import { IoSearchOutline } from 'react-icons/io5'
 import { LuUser } from 'react-icons/lu'
+import { RiShoppingCartLine } from 'react-icons/ri'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import styles from './Header.module.scss'
 import logo from '/public/header/logo.svg'
-import { IoCartOutline } from "react-icons/io5";
-import { RiShoppingCartLine } from "react-icons/ri";
-import Link from 'next/link'
-import { PAGES } from '@/constants/pages.constants'
 export function Header() {
 	return (
-		<footer className={styles.root}>
+		<header className={styles.root}>
 			<div className={styles.wrapper}>
 				<div className={styles.top}>
 					<div className={styles.left}>
@@ -62,6 +60,6 @@ export function Header() {
 					</div>
 				</div>
 			</div>
-		</footer>
+		</header>
 	)
 }

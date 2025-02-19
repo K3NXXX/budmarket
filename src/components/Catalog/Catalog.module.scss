@@ -1,9 +1,21 @@
 .root {
 	max-width: 1230px;
 	margin: 0 auto;
+	padding-bottom: 100px;
 	.list {
 		display: grid;
 		grid-template-columns: repeat(4,1fr);
 		gap: 0 40px;
+		padding: 0 20px;
+		@media (max-width: 1000px) {
+			grid-template-columns: repeat(2,300px);
+			justify-content: center;
+			gap: 40px;
+		}
+		@media (max-width: 680px) {
+			grid-template-columns: repeat(1,300px);
+			justify-content: center;
+			gap: 40px;
+		} 
 	}
 }
