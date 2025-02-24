@@ -18,11 +18,12 @@
 					align-items: center;
 					gap: 0 10px;
 					cursor: pointer;
+		
 				}
 				p {
 					font-family: var(--font-roboto-sans);
 					font-weight: 700;
-					color: #808080;
+					color: #ff4d4f;
 					font-size: 22px;
 					text-transform: uppercase;
 				}
@@ -111,7 +112,7 @@
 				}
 				div {
 					background-color: #ff4d4f ;
-					padding: 10px 20px;
+					padding: 8px 20px;
 					cursor: pointer;
 					.searchIcon {
 						color: rgb(49, 49, 49);
@@ -154,6 +155,21 @@
 						
 					}
 				}
+
+			}
+		}
+		.info {
+	
+			background-color: #e31c20;
+			.wrapper {
+				max-width: 1230px;
+				margin: 0 auto;
+			}
+			p {
+				color: white;
+				font-weight: 700;
+				font-size: 18px;
+			padding: 20px 5px;
 
 			}
 		}

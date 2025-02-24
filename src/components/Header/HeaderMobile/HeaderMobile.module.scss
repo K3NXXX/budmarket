@@ -27,7 +27,7 @@
 		p {
 			font-family: var(--font-roboto-sans);
 			font-weight: 700;
-			color: #808080;
+			color: #ff4d4f;
 			font-size: 22px;
 			text-transform: uppercase;
 			@media (max-width: 1000px) {
@@ -84,7 +84,7 @@
 				width: 100%;
 			}
 			div {
-				background-color: #ff4d4f ;
+				background-color: #ff4d4f;
 				padding: 10px 20px;
 				cursor: pointer;
 				.searchIcon {
@@ -99,14 +99,30 @@
 			flex-direction: column;
 			gap: 15px 0;
 			list-style: none;
-			border-bottom: 1px solid #e31c20;
 			padding-bottom: 20px;
 			li {
 				font-size: 18px;
 				font-weight: 700;
 			}
 		}
+		.info {
+			background-color: #e31c20;
+
+			.infoWrapper {
+				max-width: 1230px;
+				margin: 0 auto;
+			}
+			p {
+				color: white;
+				font-weight: 700;
+				font-size: 18px;
+				padding: 8px 5px;
+			}
+		}
 		.phone {
+			border-top: 1px solid #e31c20;
+			padding-top: 20px;
+
 			margin-top: 20px;
 			p {
 				font-family: var(--font-roboto-sans);
@@ -134,13 +150,11 @@
 					font-family: var(--font-roboto-sans);
 					color: rgb(255, 255, 255);
 					font-size: 14px;
-					background-color: #ff4d4f ;
+					background-color: #ff4d4f;
 					padding: 2px 5px;
 					border-radius: 50%;
-					
 				}
 			}
-
 		}
 	}
 }

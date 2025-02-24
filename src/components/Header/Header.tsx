@@ -59,6 +59,12 @@ export function Header() {
 						</div>
 					</div>
 				</div>
+				<div className={styles.info}>
+					<div className={styles.wrapper}>
+					<p>Магазин є учасником єВідновлення</p>
+
+					</div>
+				</div>
 			</div>
 		</header>
 	)

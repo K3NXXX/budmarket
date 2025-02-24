@@ -3,12 +3,12 @@ import { PAGES } from '@/constants/pages.constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
+import { FaRegHeart } from 'react-icons/fa'
 import { IoSearchOutline } from 'react-icons/io5'
+import { RiShoppingCartLine } from 'react-icons/ri'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import styles from './HeaderMobile.module.scss'
 import logo from '/public/header/logo.svg'
-import { FaRegHeart } from 'react-icons/fa'
-import { RiShoppingCartLine } from 'react-icons/ri'
 
 export function HeaderMobile() {
 	const [openModal, setOpenModal] = useState(false)
@@ -33,7 +33,6 @@ export function HeaderMobile() {
 					}`}
 				>
 					<div className={styles.wrapper}>
-						
 						<div className={styles.search}>
 							<input type='text' placeholder='Я шукаю...' />
 							<div>
@@ -51,6 +50,11 @@ export function HeaderMobile() {
 							<li>Оплата</li>
 							<li>Вхід</li>
 						</ul>
+						<div className={styles.info}>
+							<div className={styles.infoWrapper}>
+								<p>Магазин є учасником єВідновлення</p>
+							</div>
+						</div>
 						<div className={styles.phone}>
 							<p>+380 67 368 36 56</p>
 						</div>
